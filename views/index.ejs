@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Online Facebook Video Downloader Without a Watermark    </title>
+    <meta name="title" content="Online Facebook Video Downloader Without a Watermark    " />
+    <meta name="description"
+        content=" Download videos from Facebook & Save them directly to your device for Free without a watermark. FBDown super-fast, secure FB video downloader.">
+        <meta name="robots" content="noindex, nofollow, max-image-preview:large">
+    <link rel="canonical" href="/" />
+    <!-- <link rel="alternate" href="es" hreflang="es" />
+    <link rel="alternate" href="fr" hreflang="fr" />
+    <link rel="alternate" href="id" hreflang="id" />
+    <link rel="alternate" href="id" hreflang="id-id" />
+    <link rel="alternate" href="pt" hreflang="pt" />
+    <link rel="alternate" href="ru" hreflang="ru" />
+    <link rel="alternate" href="tr" hreflang="tr" />
+    <link rel="alternate" href="vi" hreflang="vi" />
+    <link rel="alternate" href="de" hreflang="de" />
+    <link rel="alternate" href="pl" hreflang="pl" /> -->
+    <link rel="alternate" href="/" hreflang="en" />
+    <link rel="alternate" href="/" hreflang="x-default" />
+
+    <!-- Twitter Tages -->
+  <meta name="twitter:card" content="fbdown.blog" /> 
+  <meta name="twitter:site" content="https://fbdown.blog/" />
+  <meta name="twitter:creator" content="https://fbdown.blog/" />
+  <meta name="twitter:title" content="Online Facebook Video Downloader Without a Watermark" />
+  <meta name="twitter:description"
+    content="Download videos from Facebook & Save them directly to your device for Free without a watermark. FBDown super-fast, secure FB video downloader." />
+  <meta name="twitter:image" content="https://fbdown.blog/Frontend/asset/images/fb big.svg" /> 
+  
+  <!-- Facebook Tages -->
+  <meta name="og:title" content="Online Facebook Video Downloader Without a Watermark" />
+  <meta name="og:description" content="Download videos from Facebook & Save them directly to your device for Free without a watermark. FBDown super-fast, secure FB video downloader." />
+  <meta name="og:image" content="https://fbdown.blog/Frontend/asset/images/fb big.svg" />
+  <meta name="og:url" content="https://fbdown.blog" />
+  <meta name="og:site_name" content="https://fbdown.blog/" />
+  <meta name="og:locale" content="en" />
+  <meta name="og:type" content="website" />
+  <!-- Meta Tags -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favico-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favico-16.png" />
+  
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        const pushFn = (event, status, insertedLink) => {
+            console.log(`event: ${event}, status: ${status}, insertedLink: ${insertedLink},`)
+            dataLayer.push({
+                event,
+                status,
+                insertedLink
+            })
+        }
+        window.pushEvent = pushFn;
+    </script>
+</head>
+
+<body>
+    <main>
+        <div class="wrap">
+            <%- include('navbar'); %>
+            <section class="main hide-after-request">
+                <div class="container">
+                    <h1 class="main-title">Free Facebook Video Downloader Online</h1>
+                    <p class="main-text fade-in">Download Facebook Videos Without a Watermark</p>
+                    <div id="loader">
+                        <main class="loaded">
+                            <header>
+                                <div class="loaders">
+                                    <div class="loader">
+                                        <div class="loader-inner ball-pulse">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </main>
+                    </div>
+                    <form id="form">
+                        <div id="rate-limit-container">
+                            <div>
+                                <svg viewBox="0 0 20 20">
+                                    <path fill="none"
+                                        d="M11.088,2.542c0.063-0.146,0.103-0.306,0.103-0.476c0-0.657-0.534-1.19-1.19-1.19c-0.657,0-1.19,0.533-1.19,1.19c0,0.17,0.038,0.33,0.102,0.476c-4.085,0.535-7.243,4.021-7.243,8.252c0,4.601,3.73,8.332,8.332,8.332c4.601,0,8.331-3.73,8.331-8.332C18.331,6.562,15.173,3.076,11.088,2.542z M10,1.669c0.219,0,0.396,0.177,0.396,0.396S10.219,2.462,10,2.462c-0.22,0-0.397-0.177-0.397-0.396S9.78,1.669,10,1.669z M10,18.332c-4.163,0-7.538-3.375-7.538-7.539c0-4.163,3.375-7.538,7.538-7.538c4.162,0,7.538,3.375,7.538,7.538C17.538,14.957,14.162,18.332,10,18.332z M10.386,9.26c0.002-0.018,0.011-0.034,0.011-0.053V5.24c0-0.219-0.177-0.396-0.396-0.396c-0.22,0-0.397,0.177-0.397,0.396v3.967c0,0.019,0.008,0.035,0.011,0.053c-0.689,0.173-1.201,0.792-1.201,1.534c0,0.324,0.098,0.625,0.264,0.875c-0.079,0.014-0.155,0.043-0.216,0.104l-2.244,2.244c-0.155,0.154-0.155,0.406,0,0.561s0.406,0.154,0.561,0l2.244-2.242c0.061-0.062,0.091-0.139,0.104-0.217c0.251,0.166,0.551,0.264,0.875,0.264c0.876,0,1.587-0.711,1.587-1.587C11.587,10.052,11.075,9.433,10.386,9.26z M10,11.586c-0.438,0-0.793-0.354-0.793-0.792c0-0.438,0.355-0.792,0.793-0.792c0.438,0,0.793,0.355,0.793,0.792C10.793,11.232,10.438,11.586,10,11.586z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                Amazing you are too fast! Please wait ~10 seconds...
+                            </div>
+                        </div>
+                        <div class="main-form">
+                            <div id="error-container"></div>
+                            <label class="bxmfunk-input with-icon" for="main-link">
+                                <img class="bxmfunk-input-icon" src="images/link.svg" width="24" alt="link-icon">
+                                <input type="text" name="id" id="main-link" placeholder="insert your link">
+                            </label>
+                            <button id="paste" type="button" onClick="onPaste()" style="display: none">
+                                <svg data-v-611f7da7="" width="14" height="18" viewBox="0 0 14 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path data-v-611f7da7=""
+                                        d="M4.75 2.9625C4.75 2.505 4.90804 2.06624 5.18934 1.74274C5.47064 1.41924 5.85218 1.2375 6.25 1.2375H7.75C8.14782 1.2375 8.52936 1.41924 8.81066 1.74274C9.09196 2.06624 9.25 2.505 9.25 2.9625M4.75 2.9625H3.25C2.85218 2.9625 2.47064 3.14424 2.18934 3.46774C1.90804 3.79124 1.75 4.23 1.75 4.6875V15.0375C1.75 15.495 1.90804 15.9338 2.18934 16.2573C2.47064 16.5808 2.85218 16.7625 3.25 16.7625H10.75C11.1478 16.7625 11.5294 16.5808 11.8107 16.2573C12.092 15.9338 12.25 15.495 12.25 15.0375V4.6875C12.25 4.23 12.092 3.79124 11.8107 3.46774C11.5294 3.14424 11.1478 2.9625 10.75 2.9625H9.25H4.75ZM4.75 2.9625C4.75 3.41999 4.90804 3.85875 5.18934 4.18225C5.47064 4.50576 5.85218 4.6875 6.25 4.6875H7.75C8.14782 4.6875 8.52936 4.50576 8.81066 4.18225C9.09196 3.85875 9.25 3.41999 9.25 2.9625H4.75Z"
+                                        stroke="#383838" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                                <span>
+                                    Paste</span>
+                            </button>
+                            <button id="clear" type="button" onClick="onClear()" style="display: none">
+                                <svg data-v-611f7da7="" width="14px" height="14px" viewBox="0 0 320 512"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path data-v-611f7da7=""
+                                        d="M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z"
+                                        fill="#4a4a4a"></path>
+                                </svg>
+                                <span>
+                                    Clear </span>
+                            </button>
+                            <button type="submit" class="bxmfunk-button ripple-btn  slide-left"
+                                id="main_submit">Download</button>
+                        </div>
+                        <input id="locale" name="locale" type="hidden" value="en">
+                    </form>
+                </div>
+            </section>
+            <div id="target"></div>
+            <style>
+                .relative {
+                    position: relative;
+                }
+
+                #_gcaptcha_pt {
+                    padding-bottom: 1em;
+                }
+
+                #paste,
+                #clear {
+                    position: absolute;
+                    right: 0;
+                    top: 37px;
+                    transform: translate(0, -50%);
+                    right: 8px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    z-index: 1;
+                    padding: 0.6em;
+                    height: 30px;
+                    padding: 2px 7px;
+                    border: 0;
+                    border-radius: 7px;
+                }
+
+                #paste span,
+                #clear span {
+                    color: #000;
+                }
+
+                #clear {
+                    display: none;
+                }
+
+                #paste:hover,
+                #clear:hover {
+                    cursor: pointer;
+                }
+
+                #paste svg,
+                #paste svg {
+                    margin-right: 5px;
+                }
+            </style>
+
+            <script>
+                const input = document.querySelector('#main-link');
+                const paste = document.querySelector('#paste');
+                const clear = document.querySelector('#clear');
+                const submit = document.querySelector('#main_submit');
+                let supportPaste = '';
+
+                const clearPastePosition = function () {
+                    clear.style.right = `${submit.offsetWidth + 20}px`;
+                    paste.style.right = `${submit.offsetWidth + 20}px`;
+                }
+
+                clearPastePosition();
+
+                window.addEventListener('resize', function () {
+                    clearPastePosition();
+                });
+
+                if (typeof (navigator.clipboard) !== 'undefined') {
+                    supportPaste = navigator.clipboard.readText;
+                    if (supportPaste) {
+                        paste.style.display = 'flex';
+                    }
+                }
+
+                const onPaste = function () {
+                    navigator.clipboard.readText().then(function (f) {
+                        if (f && f.length > 0) {
+                            input.value = f;
+                            paste.style.display = 'none';
+                            clear.style.display = 'flex';
+                        }
+                    })
+                }
+
+                const onClear = function () {
+                    input.value = '';
+                    if (supportPaste) {
+                        paste.style.display = 'flex';
+                    }
+
+                    clear.style.display = 'none';
+                }
+
+                input.addEventListener('keyup', function (e) {
+                    if (input.value.length > 0) {
+                        paste.style.display = 'none';
+                        clear.style.display = 'flex';
+                    } else {
+                        if (supportPaste) {
+                            paste.style.display = 'flex';
+                        }
+                        clear.style.display = 'none';
+                    }
+                });
+            </script>
+            <section class="features">
+                <div class="content-visibility">
+                    <div class="container">
+                        <h2 class="section-title">Best Features Of FaceBook Video Downloader:</h2>
+                        <div class="features-items">
+                            <div class="features-item slide-left">
+                                <img src="../images/no watermark.svg" alt="No Watermarks" width="88" height="71">
+                                <div class="features-item-details">
+                                    <div class="features-item-title">No Watermarks</div>
+                                    <div class="features-item-text">FBDown provides watermark-free conversions of video.</div>
+                                </div>
+                            </div>
+                            <div class="features-item slide-left">
+                                <img src="../images/high output.svg" alt="High-Quality Output" width="100" height="71">
+                                <div class="features-item-details">
+                                    <div class="features-item-title">High-Quality Output </div>
+                                    <div class="features-item-text">FBDown  high quality FB video downloader.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="features-item slide-left">
+                                <img src="../images/fast and secure.svg" alt="Fast & Secure" width="100" height="71">
+                                <div class="features-item-details">
+                                    <div class="features-item-title">Fast & Secure</div>
+                                    <div class="features-item-text">Its a very fast and secure fb video downloader.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="download-info">
+                <div class="container">
+                    <h2 class="section-title">How do I use FBDown Facebook Downloader?                    </h2>
+                    <div class="download-info-wrap">
+                        <div class="download-info-slider slider">
+                            <div class="slider-wrap">
+                                <div class="active slide  ripple-btn slide-top">
+                                    <div class="slide-icon">
+                                        <img src="images/icons/link.svg" alt="copy" width="32" height="32"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="slide-title">Open the content you want to save on Facebook.
+                                        
+                                        </div>
+                                    <div class="slide-text">Tap the three dots in the upper right corner.
+                                        </div>
+                                </div>
+                                <div class=" slide  ripple-btn slide-top">
+                                    <div class="slide-icon">
+                                        <img src="../images/icons/copy.svg" alt="paste" width="32" height="32"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="slide-title">Copy the link.</div>
+                                    <div class="slide-text">
+                                        Copy link of your selected video
+                                        </div>
+                                </div>
+                                <div class=" slide  ripple-btn slide-top">
+                                    <div class="slide-icon">
+                                        <img src="../images/icons/download.svg" alt="download" width="32" height="32"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="slide-title">Open FBDown.blog</div>
+                                    <div class="slide-text">Past URL in the search box
+                                       <br> Choose the format that you deserve.
+                                        <br>Video will be a download to your device.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-dots"></div>
+                        </div>
+                        <div class="download-info-devices slide-right">
+                            <div class="tabs">
+                                <div tab-id="tab1" class="tab active ripple-btn">
+                                    <svg width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 25">
+                                        <defs>
+                                            <style>
+                                                .a {
+                                                    fill: #a5a7b2;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <title>Window</title>
+                                        <path class="a"
+                                            d="M25.8,19.7H4.2a1.5,1.5,0,0,1-1.5-1.5V2.9A1.5,1.5,0,0,1,4.2,1.4H25.8a1.5,1.5,0,0,1,1.5,1.5V18.2A1.5,1.5,0,0,1,25.8,19.7Zm-21.1-2H25.3V3.4H4.7Z" />
+                                        <rect class="a" x="9" y="21.6" width="12" height="2" />
+                                    </svg>
+                                    Window
+                                </div>
+                                <div tab-id="tab2" class="tab ripple-btn">
+                                    <svg style="width: 24px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 28">
+                                        <defs></defs>
+                                        <title>mobile</title>
+                                        <path class="a"
+                                            d="M22.1,1.4H7.9A1.2,1.2,0,0,0,6.6,2.6V25.4a1.2,1.2,0,0,0,1.3,1.2H22.1a1.2,1.2,0,0,0,1.3-1.2V2.6A1.2,1.2,0,0,0,22.1,1.4Zm-.4,22.9H8.3V3.7H12V4.8h6V3.7h3.7Z" />
+                                    </svg>
+                                    Tab
+                                </div>
+                                <div tab-id="tab3" class="tab ripple-btn">
+                                    <svg style="width: 24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20">
+                                        <defs></defs>
+                                        <title>Android</title>
+                                        <path class="a"
+                                            d="M1.1,18H28.9A13.9,13.9,0,0,0,22.4,7.1l2.3-3.4c.8-1.2-1.2-2.3-2-1.1L20.4,6.1a13.8,13.8,0,0,0-10.8,0L7.3,2.6c-.8-1.2-2.8-.1-2,1.1L7.6,7.1A13.9,13.9,0,0,0,1.1,18Zm22.2-5a2,2,0,0,1-2,2,2,2,0,1,1,0-4A2,2,0,0,1,23.3,13ZM8.8,11a2,2,0,0,1,0,4,2,2,0,0,1,0-4Z" />
+                                    </svg>
+                                    Android
+                                </div>
+                            </div>
+                            <div class="download-info-screenshots">
+                                <img id="tab1" class="tab-content" src="../images/download-info/image-1.jpg"
+                                    alt="PC" width="747" height="509" loading="lazy">
+                                <img id="tab2" class="tab-content" src="../images/download-info/image-2.jpg"
+                                    alt="Tab" width="747" height="509" loading="lazy">
+                                <img id="tab3" class="tab-content" src="../images/download-info/image-3.jpg"
+                                    alt="Android" width="747" height="509" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="instruction instruction-mobile">
+                <div class="container">
+                    <div class="instruction-info">
+                        <h2 class="instruction-title">Can I use Facebook Downloader for PC?</h2>
+                        <div class="instruction-text">
+                            <p>FBDown lets you save any Facebook video. Use this downloader to obtain the highest quality possible. All you have to do is copy the URL of the desired content. </p>
+                            <p>The fbdown fb Downloader is a web service. Thus, you are free to use it on any preferred device. Download images and videos and audio file to Windows, Mac, Android, and other computers.</p>
+                        </div>
+                    </div>
+                    <div class="instruction-image slide-right">
+                        <img src="../images/laptop illustration .svg" alt="Can I use Facebook Downloader for PC?" loading="lazy">
+                    </div>
+                </div>
+            </section>
+            <section class="instruction instruction-pc">
+                <div class="container">
+                    <div class="instruction-info">
+                        <h2 class="instruction-title">What Facebook video downloader for mac is best?</h2>
+                        <div class="instruction-text">
+                            <p>We don't have enough information to provide a definitive response regarding your individual needs and requirements, so there isn't one. Generally speaking, people tend to select online services, browser extensions, or apps.
+                            </p>
+                            <p>After installation, apps and extensions let users continue downloading directly on the platform, which is convenient and time-saving. However, using the incorrect tool leaves you open to malware and scams.</p>
+                            <p>Internet services are a safer way to manage the downloading procedure. But be ready to switch between different folders.</p>
+                            
+                            <p>As you can see, each of the three has advantages and disadvantages of its own, therefore your particular request will ultimately determine the choice. <br>
+                               1: Select your profile photo from the upper left corner of your Feed.
+                                 <br>
+                               2:  Next to Posts, select Reels.   <br>
+                               3: After selecting the reel to download, tap.   <br>
+                                4: Click "Download reel." You will download your reel to your gallery.
+                           
+                                </p>
+                        </div>
+                    </div>
+                    <div class="instruction-image slide-left">
+                        <img src="../images/iphone mobile illustration big .svg" alt="What Facebook video downloader for mac is best?"  loading="lazy">
+                    </div>
+                </div>
+            </section>
+            <section class="faqs">
+                <div class="container">
+                    <h2 class="section-title" id="faq1">FAQs</h2>
+                    <div class="accordion" itemscope="" itemtype="">
+                        <div class="accordion-item slide-right" itemscope="" itemprop="mainEntity"
+                            itemtype="">
+                            <div class="accordion-header">
+                                <div class="accordion-title" itemprop="name">When I save a user's post, does the user get notified?
+
+                                </div>
+                                <span class="accordion-close"></span>
+                            </div>
+                            <div class="accordion-text" itemscope="" itemprop=""
+                                itemtype="">
+                                <div itemprop="text">No one is aware of whether you store any Facebook stuff with this downloader.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item slide-right" itemscope="" itemprop="mainEntity"
+                            itemtype="">
+                            <div class="accordion-header">
+                                <div class="accordion-title" itemprop="name">How to use a video downloader for Facebook?</div>
+                                <span class="accordion-close"></span>
+                            </div>
+                            <div class="accordion-text" itemscope="" itemprop=""
+                                itemtype="">
+                                <div itemprop="text">It is prohibited for users to download any content, whether it is their own or someone else's. The only capabilities that the developers recommend are bookmarking or reposting to organise and save posts that one might find interesting.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item slide-right" itemscope="" itemprop="mainEntity"
+                            itemtype="">
+                            <div class="accordion-header">
+                                <div class="accordion-title" itemprop="name">Can I download a private video from Facebook?
+                                </div>
+                                <span class="accordion-close"></span>
+                            </div>
+                            <div class="accordion-text" itemscope="" itemprop=""
+                                itemtype="">
+                                <div itemprop="text">Locate and load the group or private Facebook video. Below the video, there is a yellow download option. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item slide-right" itemscope="" itemprop="mainEntity"
+                            itemtype="">
+                            <div class="accordion-header">
+                                <div class="accordion-title" itemprop="name">Should I install the FB video downloader?
+                                </div>
+                                <span class="accordion-close"></span>
+                            </div>
+                            <div class="accordion-text" itemscope="" itemprop=""
+                                itemtype="">
+                                <div itemprop="text">No, you just open the tool via a browser, insert the copied FB video link into the entry box, and launch the saving process by clicking on "Download". Point out a location and wait for mere seconds to get the video directly on your device.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item slide-right" itemscope="" itemprop="mainEntity"
+                            itemtype="">
+                            <div class="accordion-header">
+                                <div class="accordion-title" itemprop="name">Should I register to upload Facebook videos?</div>
+                                <span class="accordion-close"></span>
+                            </div>
+                            <div class="accordion-text" itemscope="" itemprop=""
+                                itemtype="">
+                                <div itemprop="text">No, there is no need for signing in to get Facebook videos. You just paste Facebook videos URL into the opened downloader page and hit “Download”.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item slide-right" itemscope="" itemprop="mainEntity"
+                            itemtype="">
+                            <div class="accordion-header">
+                                <div class="accordion-title" itemprop="name">Why Use FBDown Facebook Downloader?</div>
+                                <span class="accordion-close"></span>
+                            </div>
+                            <div class="accordion-text" itemscope="" itemprop=""
+                                itemtype="">
+                                <div itemprop="text">You are aware that Facebook is the most widely used social media platform, right? And there's a very good reason for that: there are countless chances for amusement, learning, expanding a business, reaching new markets, and just meeting people from over the globe. 
+                                </div>
+                                <div itemprop="text">One can imagine how much content (Facebook videos, images, live streams, etc.) there is here to be inspired, be motivated, enjoy, or learn! It would all be perfect if Facebook videos could be saved offline so you wouldn't lose them and explore the content in your spare time without going to the platform again. To download photos from Facebook is much more straightforward, but saving Facebook videos is more problematic.
+
+                                </div>
+                                <div itemprop="text">The platform itself doesn't have any Facebook video download tools, but I know a way out. How do I download a video from Facebook? I use the Facebook video downloader that is handy to use.
+ 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item slide-right" itemscope="" itemprop="mainEntity"
+                            itemtype="">
+                            <div class="accordion-header">
+                                <div class="accordion-title" itemprop="name">How can I store a video from Facebook?</div>
+                                <span class="accordion-close"></span>
+                            </div>
+                            <div class="accordion-text" itemscope="" itemprop=""
+                                itemtype="">
+                                <div itemprop="text">How to download a Facebook video for later viewing <br>
+                                    1: Locate a video you wish to store for later. <br>
+                                    2: In the upper right corner of the video post, click or press the three horizontal dots that represent the "more" symbol. <br>
+                                    3: Select or press "Save video."
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="products">
+                <div class="container">
+                    <h2 class="section-title">
+                        OTher Platforms </h2>
+                    <div class="products-items">
+                        <a href="" target="_blank" class="products-item tiktok slide-bottom">
+                            <img class="products-item-icon" src="images/tiktok.svg" alt="tiktok">
+                            <div class="products-item-text">Tiktok Downloader</div>
+                        </a>
+                        <a href="" target="_blank" class="products-item twitter slide-top">
+                            <img id="img3" class="products-item-icon" src="../images/insta.svg" alt="instagram">
+                            <div class="products-item-text">Instagram Downloader</div>
+                        </a>
+                        <a href=""
+                            target="_blank" class="products-item twitter1 slide-top">
+                            <img id="img4" class="products-item-icon" src="../images/snapchat.svg" alt="snapchat">
+                            <div class="products-item-text1">SnapChat Downloader</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <%- include('footer'); %>
+    </main>
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>
